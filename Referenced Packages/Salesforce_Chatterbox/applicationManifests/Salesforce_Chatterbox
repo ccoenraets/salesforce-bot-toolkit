@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Application xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <developerName xsi:nil="true"/>
+    <label xsi:nil="true"/>
+    <moduleRefs xsi:nil="true"/>
+</Application>

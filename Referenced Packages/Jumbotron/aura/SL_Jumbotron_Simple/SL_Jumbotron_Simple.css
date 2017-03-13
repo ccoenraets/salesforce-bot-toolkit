@@ -1,0 +1,62 @@
+.THIS .slds-page-header h1{
+    /*text-align: center;*/
+	font-weight: bold;  
+}
+
+.THIS .slds-page-header h2{
+    /*text-align: center;*/
+    padding-bottom: 10px;
+}
+
+.THIS .jumbotron
+{
+    margin: 0 auto;
+}
+
+.THIS .jumbotron p{
+    padding: 5px 0px 10px 0px;
+    /*text-align: center;*/
+}
+
+.THIS .jumbotron .slds-button{
+    margin: 0 auto;
+    text-align: right;
+}
+
+.THIS .group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.THIS .richText{
+    text-align: center;
+}
+
+.THIS .richText img{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.THIS img#top-image{
+    /*display: block;*/
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.THIS .Hidden{
+    display: none !important;
+}
+
+.THIS .leftAlign{
+    text-align: left !important;
+    max-width: 75% !important;
+}
+
+.THIS .rightAlign{
+    text-align: right !important;
+    max-width: 75% !important;
+    margin: auto 0 auto auto !important;
+}

@@ -1,0 +1,21 @@
+<design:component label="Silverline Jumbotron">
+    <design:attribute name="ImageLink" default="https://silverline--c.na20.content.force.com/servlet/servlet.ImageServer?id=015140000038NYE&amp;oid=00D300000006fTZ" label="Image link" description="A link from which an image is rendered in the component. If an image is not being specified, you can set Image size percentage to 0 so that the text occupies your  component completely."/>
+    <design:attribute name="Heading" label="Heading" default="Silverline Jumbotron" description="Heading of the component."/>
+    <design:attribute name="Title" label="Title" default="Customize and feature company content and information on any record page." description="Title of the component."/>
+
+    <design:attribute name="buttonText"  label="Button text" default="Learn More" description="Button text of the component. If no text is provided, the button will not display."/>
+    <design:attribute name="Height" label="Height" default="500px" required="true" description="Height of the component in pixels. Minimum value is 50. Maximum value is 1000(must include px)."/>
+    <design:attribute name="ImagePercentage" label="Image size percentage" default="60%" description="Percentage of the component to be occupied by the image. This is 60 by default.(must include %)."/>
+    <design:attribute name="titleColor" label="Title color" description="Font color of the title text. You can enter color names or hex values such as #16325C."/>
+    <design:attribute name="headingColor" label="Heading color" description="Font color of the heading text. You can enter color names or hex values such as #16325C."/>
+    <design:attribute name="textColor" label="Body color" description="Font color of the body text. You can enter color names or hex values such as #16325C."/>
+    <design:attribute name="ButtonLink" label="Button link" default="http://silverlinecrm.com/" description="Link to navigate to on click of the button."/>
+    <design:attribute name="buttonColor"  label="Button color" description="Color of the button. You can enter color names or hex values such as #16325C."/>
+    <design:attribute name="buttonTextColor"  label="Button text color" description="Font color of the button text. You can enter color names or hex values such as #16325C."/>
+    <design:attribute name="headingFontSize" label="Heading font size" description="Font size of the heading (must include px)"/>
+    <design:attribute name="titleFontSize" label="Title font size" description="Font size of the title (must include px)"/>
+    <design:attribute name="bodyFontSize" label="Body text font size" description="Font size of the body text (must include px).This field is required when showing body text.The maximum value is 20px.The body text is pulled from the Content field on the Jumbotron Text record with the Name that matches the Jumbotron Heading."/>
+    <design:attribute name="buttonTextFontSize" label="Button text font size" description="Font size of the button text"/>
+	<design:attribute name="backgroundColor" label="Background color" description="Color of the background. You can enter color names or hex values such as #16325C."/>
+    <design:attribute name="ImageAlignment" datasource="TOP,RIGHT,LEFT" default="TOP" label="Orientation" description="Determines orientation of the image in the component. Valid values are top, bottom, left and right."/>   
+</design:component>

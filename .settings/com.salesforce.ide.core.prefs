@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+endpointApiVersion=37.0
+endpointEnvironment=Production/Developer Edition
+endpointServer=login.salesforce.com
+httpsProtocol=true
+ideVersion=37.0
+keependpoint=false
+metadataFormatVersion=37.0
+namespacePrefix=
+packageName=Bot Toolkit
+preferToolingDeployment=true
+projectIdentifier=IDE7178586956877548600
+readTimeout=400
+username=christophe@dh2.com

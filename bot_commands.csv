@@ -1,0 +1,16 @@
+Name,Invocation Pattern,Apex Class,Sample Utterance,Active
+Add two numbers,(?i)add two numbers,HandlerAddTwoNumbers,Add two numbers,true
+Find Account,(?i).*account ([A-Za-z0-9]*),HandlerFindAccount,Account united,true
+Find Contact,(?i).*contact ([A-Za-z0-9]*),HandlerFindContact,Contact jo,true
+Find Cost Center,(?i).*cost center.*,HandlerCostCenter,My Cost Center,true
+Find Employee Id,(?i).*employee id.*,HandlerEmployeeId,My Employee Id,true
+Hello,(?i)hello,HandlerHello,Hello,true
+Help,(?i)help,HandlerHelp,Help,true
+Help topic,(?i)help (.*),HandlerHelpTopic,Help Lightning,true
+My Open Cases,(?i).*open cases.*,HandlerMyOpenCases,My Open Cases,true
+Next,(?i)what.* next,HandlerNext,What should I do next,true
+Pipeline,(?i).*pipeline.*,HandlerPipeline,My Pipeline,true
+Quarter,(?i).*quarter.*,HandlerQuarter,My Quarter,true
+SOQL,(?i)select.*,HandlerSOQL,SELECT Name FROM Contact LIMIT 5,true
+Top Opportunities,(?i).*top (\d+) opportunities,HandlerTopOpportunities,Top 3 opportunities,true
+Travel Approval,(?i)travel approval,HandlerTravelApproval,Travel Approval,true

@@ -1,0 +1,59 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:appHostable,forceCommunity:availableForAllPageTypes"
+    controller="SL_LIGHT_JUMBOT.SL_JumbotronSimple_Controller"
+    access="global">
+    <!--Configurable Attributes-->
+    <aura:attribute name="Height" type="String" default="400px" access="global"/>
+    
+    <aura:attribute name="Title" type="String" access="global"/>
+    <aura:attribute name="titleColor" type="String" default="rgb(22, 50, 92)" access="global"/>
+    <aura:attribute name="titleFontSize" type="String" access="global"/>
+    
+    <aura:attribute name="Heading" type="String" access="global"/>
+    <aura:attribute name="headingColor" type="String" default="rgb(22, 50, 92)" access="global"/>
+    <aura:attribute name="headingFontSize" type="String" access="global"/>
+    
+	<aura:attribute name="ButtonLink" type="String" access="global"/>
+    <aura:attribute name="ImageAlignment" type="String" default="TOP" access="global"/>
+    <aura:attribute name="ImagePercentage" type="String" default="60%" access="global"/>
+    <aura:attribute name="ImageLink" type="String" access="global"/>
+    <aura:attribute name="backgroundColor" type="String" access="global"/>
+    
+	<aura:attribute name="textColor" type="String" default="rgb(22, 50, 92)" access="global"/>
+    <aura:attribute name="bodyFontSize" type="String" access="global"/>
+    
+    <aura:attribute name="buttonText" type="String" default="" access="global"/>
+    <aura:attribute name="buttonColor" type="String" default="#0070D2" access="global"/>
+    <aura:attribute name="buttonTextColor" type="String" default="white" access="global"/>
+    <aura:attribute name="buttonTextFontSize" type="String" access="global"/>
+    
+    <!--Method to run on render-->
+    <aura:handler name="init" value="{!this}" action="{!c.getSimpleJumbotronBodyJS}"/>
+    
+    <!--Binding attributes-->
+    <aura:attribute name="simpleJumbotronBody" type="SL_LIGHT_JUMBOT__Jumbotron_Text__c"/>
+
+     
+    <body>
+        <div class="container slds-page-header group" style="overflow-y: auto!important;width:100%!important">          
+            <div class="jumbotron" aura:id="jumbotron">
+            	<div aura:id="pageHeader" id="pageHeader" style="{!'Height:'+v.Height+';background-color:'+v.backgroundColor+';'}">
+                	<img src="{!v.ImageLink}" aura:id="top-image" id="top-image" Style="{!'height:'+if(v.ImageAlignment == 'TOP',v.ImagePercentage+'!important',
+                                                                                                   if(v.ImageAlignment == 'RIGHT','auto',
+                                                                                                   if(v.ImageAlignment == 'LEFT','auto','')))+';
+                                                                                          width:'+if(v.ImageAlignment == 'TOP','auto',
+                                                                                                  if(v.ImageAlignment == 'RIGHT', v.ImagePercentage,
+                                                                                                  if(v.ImageAlignment == 'LEFT',v.ImagePercentage,'')))+';
+                                                                                          float:'+if(v.ImageAlignment == 'RIGHT','right',
+                                                                                                  if(v.ImageAlignment == 'LEFT', 'left',''))+';'}"/>
+                    <h1 class="header-label" aura:id="header" id="header" style="{!'color:'+v.headingColor+';font-size:'+v.headingFontSize+';'}">{!v.Heading}</h1>
+                    <h2 class="header-label" aura:id="title" id="title" style="{!'color:'+v.titleColor+';font-size:'+v.titleFontSize+';'}">{!v.Title}</h2>
+                    <p aura:id="content" id="content" style="{!'color:'+v.textColor+';font-size:'+v.bodyFontSize+';'}">{!v.simpleJumbotronBody.SL_LIGHT_JUMBOT__Content__c}</p>
+                    <p aura:id="learn-more-btn" id="learn-more-btn" class="{!(v.buttonText == '' || v.buttonText == null) ? ' Hidden' : ''}">
+                        <a aura:id="learnMoreBtn" id="learnMoreBtn" class="slds-button slds-button--brand button-red" href="{!v.ButtonLink}" target="_blank" role="button" style="{!'background-color:'+v.buttonColor+';color:'+v.buttonTextColor+';font-size:'+v.buttonTextFontSize+';'}">{!v.buttonText}</a>
+                    </p>
+            	</div>
+            </div><br clear="all" />
+        </div> <!-- /container -->  
+	</body>
+    
+</aura:component>
