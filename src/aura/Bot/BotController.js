@@ -1,4 +1,11 @@
 ({
+    init: function(component, event, helper){
+    	var action = component.get("c.getUserInfo");
+        action.setCallback(this, function(actionResult) {
+            component.set("v.user", actionResult.getReturnValue());
+        });
+        $A.enqueueAction(action);  
+    },
 	utteranceHandler : function(component, event, helper) {
         if (event.keyCode !== 13) {
             return;
