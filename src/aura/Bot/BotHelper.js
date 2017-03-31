@@ -46,6 +46,11 @@
 
         });
         $A.enqueueAction(action); 
+    }, 
+    speak : function(messageText,lang) {
+        var msg = new SpeechSynthesisUtterance(messageText);
+        msg.voiceURI = 'Google UK English Female';
+        msg.lang = lang;
+        window.speechSynthesis.speak(msg);
     }
-
 })
