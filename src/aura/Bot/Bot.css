@@ -1,11 +1,11 @@
 .THIS {
     position: relative;
-	box-sizing: border-box;
+    box-sizing: border-box;
     overflow: hidden !important;
 }
 
 .THIS>.content {
-	position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -14,7 +14,7 @@
 }
 
 .THIS>.footer {
-	position: absolute;
+    position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
@@ -30,7 +30,7 @@
 }
 
 .THIS .list-item {
-	margin: 4px 0 4px 0;
+    margin: 4px 0 4px 0;
     border-bottom: solid 1px #f4f6f9;
 }
 
@@ -56,4 +56,23 @@
 
 .THIS .slds-file-selector__dropzone {
     width: 100% !important;
+}
+.THIS .slds-input {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0;
+    width: 90%;
+	float: left;
+}
+.THIS .slds-button.speak {
+    width: 10%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.THIS .slds-button--brand {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.THIS .recording {
+    background-color: rgb(194, 57, 52);
+    border: 1px solid rgb(194, 57, 52);
 }

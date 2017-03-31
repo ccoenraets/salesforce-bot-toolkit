@@ -80,4 +80,9 @@ public with sharing class BotController {
         
     }
     
+	@AuraEnabled
+    public static User getUserInfo(){
+        return [SELECT SmallPhotoURL FROM User WHERE Id =: UserInfo.getUserId()];
+    }
+
 }
